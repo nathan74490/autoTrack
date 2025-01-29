@@ -1,6 +1,6 @@
 <template>
     <div id="footer">
-        <h1 class="orbitron-title">Autotrack</h1><img id="dp_fr" src="@/components/icons/france-28463_1280.png" alt="drapeau france">
+        <img id="btnHome" src="@/components/icons/home.svg" alt="button home"><img class="imgFooter" src="@/components/icons/hearts.svg" alt="button like"><img src="@/components/icons/profil.svg" alt="">
     </div>
 </template>
 
@@ -8,18 +8,22 @@
 </script>
 
 <style>
-#header{
-    margin-left: 5%;
-    margin-right: 5%;
+#footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    background-color: #2F2F2F;
+    border-radius: 57px;
 }
-h1{
-    color: white;
+#btnHome{
+    width: 49.06px;
+    height: 35.16px;
 }
-
+#imgFooter{
+    width: 35.16px;
+    height: 35.16px;
+}
 #dp_fr{
     width: 30px;
     height: 20px;

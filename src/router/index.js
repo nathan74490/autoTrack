@@ -1,4 +1,4 @@
-import PadgeHome from '@/views/PadgeHome.vue'
+import LicensePlate from '@/views/LicensePlate.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -6,8 +6,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'myhome',
-      component: PadgeHome,
+      name: 'LicensePlate',
+      component: LicensePlate,
     },
     {
       path: '/Search',
