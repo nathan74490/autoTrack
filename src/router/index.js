@@ -1,4 +1,4 @@
-import LicensePlate from '@/views/LicensePlate.vue'
+import Search from '@/views/Search.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -6,13 +6,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'LicensePlate',
-      component: LicensePlate,
-    },
-    {
-      path: '/Search',
       name: 'Search',
-      component: () => import('@/views/Search.vue'),
+      component: Search,
     },
     {
       path: '/infoRecherche',

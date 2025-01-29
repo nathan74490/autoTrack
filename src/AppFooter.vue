@@ -15,6 +15,7 @@
     align-items: center;
     background-color: #2F2F2F;
     border-radius: 57px;
+    height: 64px;
 }
 #btnHome{
     width: 49.06px;
