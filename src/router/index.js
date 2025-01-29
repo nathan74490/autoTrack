@@ -9,6 +9,21 @@ const router = createRouter({
       name: 'myhome',
       component: PadgeHome,
     },
+    {
+      path: '/Search',
+      name: 'Search',
+      component: () => import('../views/Search.vue'),
+    },
+    {
+      path: '/infoRecherche',
+      name: 'infoRecherche',
+      component: () => import('@/views/researchInfo.vue')
+    },
+    {
+      path: '/modificationinfo',
+      name: 'modificationinfo',
+      component: () => import('../views/InfoModification.vue'),
+    },
   ],
 })
 

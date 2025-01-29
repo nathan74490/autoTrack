@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+.orbitron-title {
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --vt-c-white: #ffffff;
