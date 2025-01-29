@@ -1,5 +1,5 @@
 <template>
-    <div id="header">
+    <div id="footer">
         <h1 class="orbitron-title">Autotrack</h1><img id="dp_fr" src="@/components/icons/france-28463_1280.png" alt="drapeau france">
     </div>
 </template>

@@ -12,17 +12,32 @@ const router = createRouter({
     {
       path: '/Search',
       name: 'Search',
-      component: () => import('../views/Search.vue'),
+      component: () => import('@/views/Search.vue'),
     },
     {
       path: '/infoRecherche',
       name: 'infoRecherche',
-      component: () => import('@/views/researchInfo.vue')
+      component: () => import('@/views/ResearchInfo.vue')
     },
     {
-      path: '/modificationinfo',
-      name: 'modificationinfo',
-      component: () => import('../views/InfoModification.vue'),
+      path: '/InfoModification',
+      name: 'InfoModification',
+      component: () => import('@/views/InfoModification.vue'),
+    },
+    {
+      path: '/BtnHome',
+      name: 'BtnHome',
+      component: () => import('@/views/BtnHome.vue'),
+    },
+    {
+      path: '/BtnLike',
+      name: 'BtnLike',
+      component: () => import('@/views/BtnLike.vue'),
+    },
+    {
+      path: '/BtnProfil',
+      name: 'BtnProfil',
+      component: () => import('@/views/BtnProfil.vue'),
     },
   ],
 })
