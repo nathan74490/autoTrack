@@ -40,6 +40,7 @@ const sendToStore = () => {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 5vh;
 }
 </style>

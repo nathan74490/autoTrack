@@ -25,6 +25,7 @@ import LicensePlateAndSearch from "@/views/LicensePlateAndSearch.vue"
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 #greenBackground {
   position: absolute;

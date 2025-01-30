@@ -35,9 +35,9 @@ const router = createRouter({
       component: () => import('@/views/BtnLike.vue'),
     },
     {
-      path: '/BtnProfil',
-      name: 'BtnProfil',
-      component: () => import('@/views/BtnProfil.vue'),
+      path: '/ValueResearch',
+      name: 'ValueResearch',
+      component: () => import('@/views/ValueResearch.vue'),
     },
   ],
 })

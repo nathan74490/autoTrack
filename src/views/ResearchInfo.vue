@@ -1,3 +1,12 @@
-<template>tes bien sur la bonne page</template>
-<script></script>
+<script setup>
+import { store } from '@/store'
+import ValueResearch from '@/views/ValueResearch.vue'
+
+</script>
+
+<template>
+    <ValueResearch />
+</template>
+
+
 <style></style>
