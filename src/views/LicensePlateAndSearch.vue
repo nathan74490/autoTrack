@@ -1,18 +1,20 @@
-
 <script setup>
-import LicensePlate from "@/views/LicensePlate.vue"
-import { RouterLink} from 'vue-router'
+import { ref } from 'vue'
+import LicensePlate from '@/views/LicensePlate.vue'
+import Search from '@/views/Search.vue'
+
+const title = ref('v-model argument example')
 </script>
 
 <template>
     <div id="home">
-        <LicensePlate id="plateInput"></LicensePlate>
+        <h1>{{ title }}</h1>
+        <LicensePlate v-model:title="title" />
         <nav id="search">
-            <RouterLink to="/"></RouterLink>
+            <Search />
         </nav>
     </div>
 </template>
-
 
 <style>
 #search {
@@ -21,9 +23,11 @@ import { RouterLink} from 'vue-router'
     justify-content: center;
     align-items: center;
 }
-#plateInput{
-  align-self: center;
+
+#plateInput {
+    align-self: center;
 }
+
 #home {
     padding-top: 10vh;
     width: 100vw;

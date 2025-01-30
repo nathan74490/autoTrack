@@ -1,11 +1,20 @@
+<script>
+export default {
+    props: ['title'],
+    emits: ['update:title']
+}
+</script>
+
+
 <template>
     <div class="plate-container">
         <div class="plate-left">F</div>
-        <input type="text" class="plate-input" maxlength="9" placeholder="XX-123-XX">
+        <input type="text" class="plate-input" maxlength="9" placeholder="XX-123-XX" :value="title"
+            @input="$emit('update:title', $event.target.value)">
         <div class="plate-right"></div>
     </div>
 </template>
-<script></script>
+
 <style>
 .plate-container {
     display: flex;

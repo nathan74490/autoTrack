@@ -3,13 +3,15 @@ import { RouterView } from 'vue-router'
 import AppHeader from "@/AppHeader.vue"
 import AppFooter from "@/AppFooter.vue"
 import LicensePlateAndSearch from "@/views/LicensePlateAndSearch.vue"
+import PadgeHome from "@/views/PadgeHome.vue"
 </script>
 
 <template>
   <header>
     <AppHeader></AppHeader>
   </header>
-  <LicensePlateAndSearch></LicensePlateAndSearch>
+  <div id="input"><LicensePlateAndSearch></LicensePlateAndSearch></div>
+  
   <img id="imgCar" src="../src/components/icons/car.svg" alt="">
   <div id="greenBackground"></div>
 
@@ -30,7 +32,11 @@ import LicensePlateAndSearch from "@/views/LicensePlateAndSearch.vue"
   height: 177px;
   width: 345px;
 }
-
+#input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 #greenBackground {
   position: absolute;
   top: 0;

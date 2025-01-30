@@ -1,4 +1,4 @@
-import Search from '@/views/Search.vue'
+import PadgeHome from '@/views/PadgeHome.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -6,13 +6,18 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'Search',
-      component: Search,
+      name: 'PadgeHome',
+      component: PadgeHome,
     },
     {
       path: '/infoRecherche',
       name: 'infoRecherche',
       component: () => import('@/views/ResearchInfo.vue')
+    },
+    {
+      path: '/Search',
+      name: 'Search',
+      component: () => import('@/views/Search.vue')
     },
     {
       path: '/InfoModification',
