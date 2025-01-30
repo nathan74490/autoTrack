@@ -5,6 +5,7 @@ export const store = reactive({
   plateNumber: '', // Valeur de la plaque
 
   setPlateNumber(value) {
-    store.plateNumber = value // Met à jour la valeur
-  }
+    store.plateNumber = value
+    localStorage.setItem('plateNumber', value) // Sauvegarde la plaque
+  },
 })

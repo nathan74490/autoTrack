@@ -1,7 +1,10 @@
 <template>
-    <div id="buttonSearch">Recherche</div>
+    <RouterLink to="/infoRecherche"><button id="buttonSearch"@click="$emit('click')">Search</button></RouterLink>
 </template>
-<script></script>
+<script setup>
+import { RouterLink } from 'vue-router'
+defineEmits(['click']) // Déclare un événement "click"
+</script>
 <style>
     #buttonSearch{
         display: flex;

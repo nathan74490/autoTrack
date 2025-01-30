@@ -5,12 +5,11 @@ export default {
 }
 </script>
 
-
 <template>
     <div class="plate-container">
         <div class="plate-left">F</div>
-        <input type="text" class="plate-input" maxlength="9" placeholder="XX-123-XX" :value="title"
-            @input="$emit('update:title', $event.target.value)">
+        <input type="text" class="plate-input" maxlength="9" placeholder="XX-123-XX" 
+            :value="title" @input="$emit('update:title', $event.target.value)">
         <div class="plate-right"></div>
     </div>
 </template>
@@ -22,7 +21,6 @@ export default {
     background: white;
     border: 3px solid black;
     border-radius: 8px;
-    /* padding: 5px; */
     width: 250px;
 }
 
@@ -37,7 +35,6 @@ export default {
     align-items: center;
     color: white;
     font-weight: bold;
-    /* border-radius: 4px; */
 }
 
 .plate-left {

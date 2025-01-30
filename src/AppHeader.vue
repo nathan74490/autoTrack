@@ -1,15 +1,15 @@
 <template>
-    <div id="header">
-        <h1 class="orbitron-title">Autotrack</h1><img id="dp_fr" src="@/components/icons/france-28463_1280.png" alt="drapeau france">
-    </div>
+    <header>
+        <RouterLink to="/"><h1 class="orbitron-title">Autotrack</h1></RouterLink><img id="dp_fr" src="@/components/icons/france-28463_1280.png" alt="drapeau france">
+    </header>
 </template>
 
-<script>
-</script>
+<script setup>
+</script >
 
 <style>
 
-#header{
+header{
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
