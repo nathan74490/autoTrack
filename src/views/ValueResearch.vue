@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="info">
       <p>Numéro de plaque: {{ store.plateNumber }}</p>
       <p>Label: {{ store.AWN_label }}</p>
   
@@ -34,12 +34,24 @@
   
   <style>
   /* Un peu de style pour organiser les sections */
+  #info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .info-section {
     border: 1px solid #ccc;
     padding: 10px;
+    width: 90%;
     margin: 10px 0;
     border-radius: 5px;
     background-color: #B1B1B1;
+    box-shadow: -3px 7px 8px rgba(21, 104, 0, 1);
+  }
+  h2{
+    font-weight: bold;
+    color: black;
   }
   </style>
   
