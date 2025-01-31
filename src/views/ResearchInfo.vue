@@ -5,8 +5,13 @@ import ValueResearch from '@/views/ValueResearch.vue'
 </script>
 
 <template>
-    <ValueResearch />
+    <div id="result"><ValueResearch /></div>
+    
 </template>
 
 
-<style></style>
+<style>
+#result{
+    margin-bottom: 10vh;
+}
+</style>

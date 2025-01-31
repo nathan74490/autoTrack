@@ -20,9 +20,6 @@ const sendToStore = () => {
     <nav id="search">
       <Search @click="sendToStore" />
     </nav>
-
-    <!-- Afficher la valeur du store -->
-    <p>Valeur dans le store : {{ store.plateNumber }}</p>
   </div>
 </template>
 

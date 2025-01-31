@@ -32,12 +32,22 @@ const router = createRouter({
     {
       path: '/BtnLike',
       name: 'BtnLike',
-      component: () => import('@/views/BtnLike.vue'),
+      component: () => import('@/views/BtnModification.vue'),
     },
     {
       path: '/ValueResearch',
       name: 'ValueResearch',
       component: () => import('@/views/ValueResearch.vue'),
+    },
+    {
+      path: '/Assurance',
+      name: 'Assurance',
+      component: () => import('@/Assurance.vue')
+    },
+    {
+      path: '/Entretien',
+      name: 'Entretien',
+      component: () => import('@/Entretien.vue')
     },
   ],
 })
