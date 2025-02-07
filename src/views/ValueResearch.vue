@@ -23,86 +23,68 @@
 </template>
 
 <script setup>
-import BtnModification from "@/views/BtnModification.vue"
-import { computed, onMounted, reactive } from 'vue'
-import { store } from '@/store'
+import BtnModification from "@/views/BtnModification.vue";
+import { ref, onMounted } from "vue";
+import { store } from "@/store";
 
-onMounted(() => {
-  store.loadJSONData() // Charge les données JSON depuis le store
-})
+const infoCar = ref([]);
 
-// Générer dynamiquement infoCar avec computed pour la réactivité
-// const infoCar = reactive([
-//   {
-//     id: 'Identification',
-//     properties: [
-//       { name: "VIN", value: store.AWN_VIN }
-//       { name: "VCodeMoteurIN", value: store.AWN_code_moteu }
-//     ]VIN: store.AWN_VIN, CodeMoteur: store.AWN_code_moteur, couleur: store.AWN_couleur, porte: store.AWN_nbr_de_places
-//   },
-//   { id: 'Carburant', Type: store.AWN_energie, conso: `${store.AWN_consommation_mixte} l/100` },
-//   { id: 'Motorisation', Cylindree: store.AWN_nbr_cylindre_energie, puissance: store.AWN_puissance_chevaux, "puissance Fisc": store.AWN_puissance_fiscale, nbCylindre: store.AWN_nbr_cylindres },
-//   { id: 'Transmission', traction: store.AWN_propulsion },
-//   { id: 'entretien', 'date de fin du controle technique': 'non renseigné', 'Accident mineurs': 'non renseigné', button: 'test' },
-//   { id: 'Assurance', 'Assuré': 'non renseigné', 'Date de fin': 'non renseigné', button: 'test' }
-// ])
+onMounted(async () => {
+  await store.loadCarData(); // Assurer que les données sont chargées avant de les afficher
+  store.ifPlateisinlocal();
+  setInfoCar();
+  
+});
 
-const infoCar = reactive([
-  {
-    id: 'Identification',
-    properties: [
-      { name: "VIN", value: store.AWN_VIN },
-      { name: "CodeMoteur", value: store.AWN_code_moteur },
-      { name: "couleur", value: store.AWN_couleur },
-      { name: "porte", value: store.AWN_nbr_de_places },
-    ]
-  },
-  {
-    id: 'Carburant',
-    properties: [
-      { name: "Type", value: store.AWN_energie },
-      { name: "Consomation", value: `${store.AWN_consommation_mixte} l/100` }
-    ]
-  },
-  {
-    id: 'Motorisation',
-    properties: [
-      { name: "Cylindrée", value: store.AWN_nbr_cylindre_energie },
-      { name: "puissance", value: store.AWN_puissance_chevaux },
-      { name: "puissance Fisc", value: store.AWN_puissance_fiscale },
-      { name: "nbCylindre", value: store.AWN_nbr_cylindres },
-    ]
-  },
-  {
-    id: 'Transmission',
-    properties: [
-      { name: "traction", value: store.AWN_propulsion },
-    ]
-  },
-  {
-    id: 'Entretien',
-    properties: [
-      { name: "date de fin du controle technique", value: 'non renseigné' },
-      { name: "Accident mineurs", value: 'non renseigné' },
-    ],
-    link: {
-      text: "Vous avez des renseignement",
-      path: "/Entretien"
-    }
-  },
-  {
-    id: 'Assurance',
-    properties: [
-      { name: "Assuré", value: 'non renseigné' },
-      { name: "Date de fin", value: 'non renseigné' },
-    ],
-    link: {
-      text: "Vous avez des renseignement ",
-      path: "/Assurance"
-    }
-  },
-])
-
+const setInfoCar = () => {
+  infoCar.value = [
+    {
+      id: "Identification",
+      properties: [
+        { name: "VIN", value: store.AWN_VIN },
+        { name: "Code Moteur", value: store.AWN_code_moteur },
+        { name: "Couleur", value: store.AWN_couleur },
+        { name: "Nombre de portes", value: store.AWN_nbr_de_places },
+      ],
+    },
+    {
+      id: "Carburant",
+      properties: [
+        { name: "Type", value: store.AWN_energie },
+        { name: "Consommation", value: store.AWN_consommation_mixte ? `${store.AWN_consommation_mixte} l/100` : "Non renseigné" },
+      ],
+    },
+    {
+      id: "Motorisation",
+      properties: [
+        { name: "Cylindrée", value: store.AWN_nbr_cylindre_energie },
+        { name: "Puissance", value: store.AWN_puissance_chevaux },
+        { name: "Puissance Fiscale", value: store.AWN_puissance_fiscale },
+        { name: "Nombre de cylindres", value: store.AWN_nbr_cylindres },
+      ],
+    },
+    {
+      id: "Transmission",
+      properties: [{ name: "Traction", value: store.AWN_propulsion }],
+    },
+    {
+      id: "Entretien",
+      properties: [
+        { name: "Date de fin du contrôle technique", value: store.Datefincontroletech},
+        { name: "Accidents mineurs", value: store.Accidents },
+      ],
+      link: { text: "Vous avez des renseignements ?", path: "/Entretien" },
+    },
+    {
+      id: "Assurance",
+      properties: [
+        { name: "Assuré", value: store.Assure },
+        { name: "Date de fin", value: store.DatefinAssu },
+      ],
+      link: { text: "Vous avez des renseignements ?", path: "/Assurance" },
+    },
+  ];
+};
 </script>
 
 <style>

@@ -9,6 +9,7 @@ const title = ref('') // Stocke la valeur de l'input
 // Fonction pour mettre à jour le store
 const sendToStore = () => {
   store.setPlateNumber(title.value) // Envoie la valeur entrée au store
+  store.ifPlateisinlocal();
   console.log('Valeur envoyée au store:', store.plateNumber) // Debug
 }
 </script>
