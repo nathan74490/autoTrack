@@ -38,6 +38,7 @@ export const store = reactive({
       const data = JSON.parse(localStorage.getItem('infoCar'));
       if (data) Object.assign(store, data);
       console.log(data)
+      console.log("pourquoi ca ne marche pas")
     } catch (error) {
       console.error(error);
     }
