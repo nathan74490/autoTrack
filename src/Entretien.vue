@@ -25,7 +25,7 @@
   const loadDataFromLocalStorage = () => {
     if (!plateNumber.value) return;
   
-    const storedData = JSON.parse(localStorage.getItem(plateNumber.value)) || {};
+    const storedData = JSON.parse(localStorage.removeItem(plateNumber.value)) || {};
     dateFinCont.value = storedData[storageKey] || "";
   };
   
