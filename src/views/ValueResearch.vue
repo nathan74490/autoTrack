@@ -16,7 +16,6 @@
         <BtnModification v-if="info.link" :path="info.link.path">
           <h3>{{ info.link.text }}</h3>
         </BtnModification>
-        <!-- <RouterLink v-if="info.link" :to="info.link.path + info.id">{{ info.link.text }}</RouterLink> -->
       </li>
     </ul>
 
