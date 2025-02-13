@@ -18,6 +18,34 @@ export const store = reactive({
       localStorage.setItem(store.plateNumber, JSON.stringify(car))
     }
   },
+  async loadJSONData() {
+    try {
+      const response = await fetch('/pieceDetache.json') // Assurez-vous que data.json est dans public/
+      if (!response.ok) throw new Error('Erreur lors du chargement du fichier JSON')
+      const data = await response.json();
+      let piecesCar
+      // console.log("est ce que je rentre dans le for")
+      // console.log(data.parcVoitures)
+      for (let i=0;i<data.parcVoitures.length;i++){
+        // console.log(data.parcVoitures[i].plaque)
+        // console.log(store.plateNumber)
+        // console.log("est ce que je rentre dans la boucle");
+        if(data.parcVoitures[i].plaque ===store.plateNumber){
+          // console.log("je rentre dans le if");
+          piecesCar=data.parcVoitures[i];
+          // console.log(piecesCar);
+          localStorage.setItem("piecesCar",JSON.stringify(piecesCar));
+        }
+        // console.log("je sort du if")
+      }
+      // console.log(piecesCar)
+      // console.log(data.parcVoitures[0].plaque)
+      
+      // console.log("envoie des pieces effectuer");
+    } catch (error) {
+      console.error('Erreur de chargement JSON:', error)
+    }
+  },
 
   async loadCarData() {
     const options = {

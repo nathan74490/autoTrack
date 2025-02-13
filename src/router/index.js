@@ -49,6 +49,11 @@ const router = createRouter({
       name: 'Entretien',
       component: () => import('@/Entretien.vue')
     },
+    {
+      path: '/SparePartsPages',
+      name: 'SparePartsPages',
+      component: () => import('@/SparePartsPages.vue')
+    },
   ],
 })
 

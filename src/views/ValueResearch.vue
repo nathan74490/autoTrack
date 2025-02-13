@@ -2,7 +2,9 @@
   <div id="info">
     <p>Numéro de plaque: {{ store.plateNumber }}</p>
     <p>Label: {{ store.AWN_label }}</p>
-
+    <BtnSparePartsPages>
+      <h3>Vous avez besoin de pièces detachée</h3>
+    </BtnSparePartsPages>
     <ul >
       <li v-for="info in infoCar" :key="info.id" class="info-section">
         <h2>{{ info.id }}</h2>
@@ -24,6 +26,7 @@
 
 <script setup>
 import BtnModification from "@/views/BtnModification.vue";
+import BtnSparePartsPages from "@/views/BtnSparePartsPages.vue";
 import { ref, onMounted } from "vue";
 import { store } from "@/store";
 
@@ -32,6 +35,7 @@ const infoCar = ref([]);
 onMounted(async () => {
   await store.loadCarData(); // Assurer que les données sont chargées avant de les afficher
   store.ifPlateisinlocal();
+  store.loadJSONData();
   setInfoCar();
   
 });

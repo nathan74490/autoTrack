@@ -1,0 +1,501 @@
+{
+    "parcVoitures": [
+    {
+        "plaque": "dk173zl",
+        "piecesVehicule": {
+            "feux": {
+                "avant": {
+                    "phare_gauche": {
+                        "reference": "6J2941005",
+                        "description": "Phare avant gauche, halogène"
+                    },
+                    "phare_droit": {
+                        "reference": "6J2941006",
+                        "description": "Phare avant droit, halogène"
+                    },
+                    "clignotant_gauche": {
+                        "reference": "6J0953049",
+                        "description": "Clignotant avant gauche"
+                    },
+                    "clignotant_droit": {
+                        "reference": "6J0953050",
+                        "description": "Clignotant avant droit"
+                    }
+                },
+                "arriere": {
+                    "feu_arriere_gauche": {
+                        "reference": "6J3945095",
+                        "description": "Feu arrière gauche"
+                    },
+                    "feu_arriere_droit": {
+                        "reference": "6J3945096",
+                        "description": "Feu arrière droit"
+                    },
+                    "troisieme_feu_stop": {
+                        "reference": "6J3945097",
+                        "description": "Troisième feu stop"
+                    }
+                }
+            },
+            "moteur": {
+                "bloc_moteur": {
+                    "reference": "04C103021J",
+                    "description": "Bloc moteur"
+                },
+                "culasse": {
+                    "reference": "04E103265D",
+                    "description": "Culasse avec soupapes"
+                },
+                "joint_de_culasse": {
+                    "reference": "04E103383C",
+                    "description": "Joint de culasse"
+                },
+                "pompe_a_huile": {
+                    "reference": "04E115105AB",
+                    "description": "Pompe à huile"
+                },
+                "filtre_a_huile": {
+                    "reference": "04E115561H",
+                    "description": "Filtre à huile"
+                },
+                "turbo": {
+                    "reference": "04E145702H",
+                    "description": "Turbo compresseur"
+                },
+                "injecteurs": {
+                    "reference": "04E906036Q",
+                    "description": "Injecteur essence haute pression"
+                },
+                "courroie_de_distribution": {
+                    "reference": "04E109119H",
+                    "description": "Courroie de distribution"
+                },
+                "pompe_a_eau": {
+                    "reference": "04E121600AF",
+                    "description": "Pompe à eau"
+                },
+                "radiateur": {
+                    "reference": "6Q0121253J",
+                    "description": "Radiateur de refroidissement"
+                },
+                "alternateur": {
+                    "reference": "04C903023X",
+                    "description": "Alternateur 140A"
+                },
+                "demarreur": {
+                    "reference": "02M911024M",
+                    "description": "Démarreur 1.1 kW"
+                }
+            },
+            "habitacle": {
+                "tableau_de_bord": {
+                    "reference": "6J1857004",
+                    "description": "Tableau de bord complet"
+                },
+                "volant": {
+                    "reference": "6J0419091",
+                    "description": "Volant en cuir multifonction"
+                },
+                "compteur_de_bord": {
+                    "reference": "6J0920801",
+                    "description": "Compteur de bord digital"
+                },
+                "ecran_multimedia": {
+                    "reference": "6J0919605",
+                    "description": "Écran multimédia tactile"
+                },
+                "climatisation": {
+                    "reference": "6J0820045",
+                    "description": "Module de climatisation"
+                },
+                "console_centrale": {
+                    "reference": "6J1863241",
+                    "description": "Console centrale avec accoudoir"
+                },
+                "siege_conducteur": {
+                    "reference": "6J0881405",
+                    "description": "Siège conducteur avec réglage hauteur"
+                },
+                "siege_passager": {
+                    "reference": "6J0881406",
+                    "description": "Siège passager avant"
+                },
+                "banquette_arriere": {
+                    "reference": "6J0881905",
+                    "description": "Banquette arrière rabattable"
+                },
+                "ceinture_de_securite_avant": {
+                    "reference": "6J0857705",
+                    "description": "Ceinture de sécurité avant gauche"
+                },
+                "ceinture_de_securite_arriere": {
+                    "reference": "6J0857806",
+                    "description": "Ceinture de sécurité arrière droite"
+                },
+                "poignee_de_porte_interieure": {
+                    "reference": "6J0837021",
+                    "description": "Poignée de porte intérieure avant gauche"
+                },
+                "panneau_de_porte": {
+                    "reference": "6J0867011",
+                    "description": "Panneau de porte avant droit"
+                },
+                "retro_interieur": {
+                    "reference": "6J0857511",
+                    "description": "Rétroviseur intérieur électrochrome"
+                },
+                "leves_vitres": {
+                    "reference": "6J0959802",
+                    "description": "Commande lève-vitre électrique conducteur"
+                },
+                "eclairage_habitacle": {
+                    "reference": "6J0947105",
+                    "description": "Éclairage plafonnier avant"
+                },
+                "moquette": {
+                    "reference": "6J1863011",
+                    "description": "Revêtement moquette sol"
+                }
+            },
+            "carrosserie": {
+                "capot": {
+                    "reference": "6J0823031A",
+                    "description": "Capot avant"
+                },
+                "pare_chocs_avant": {
+                    "reference": "6J0807217E",
+                    "description": "Pare-chocs avant avec emplacement antibrouillards"
+                },
+                "pare_chocs_arriere": {
+                    "reference": "6J6807421C",
+                    "description": "Pare-chocs arrière avec diffuseur"
+                },
+                "aile_avant_gauche": {
+                    "reference": "6J0821105A",
+                    "description": "Aile avant gauche"
+                },
+                "aile_avant_droite": {
+                    "reference": "6J0821106A",
+                    "description": "Aile avant droite"
+                },
+                "portiere_avant_gauche": {
+                    "reference": "6J4831055D",
+                    "description": "Porte avant gauche"
+                },
+                "portiere_avant_droite": {
+                    "reference": "6J4831056D",
+                    "description": "Porte avant droite"
+                },
+                "portiere_arriere_gauche": {
+                    "reference": "6J5831055B",
+                    "description": "Porte arrière gauche (5 portes uniquement)"
+                },
+                "portiere_arriere_droite": {
+                    "reference": "6J5831056B",
+                    "description": "Porte arrière droite (5 portes uniquement)"
+                },
+                "coffre": {
+                    "reference": "6J6827025",
+                    "description": "Hayon arrière avec emplacement logo"
+                },
+                "toit": {
+                    "reference": "6J6827550",
+                    "description": "Toit complet"
+                },
+                "retroviseur_exterieur_gauche": {
+                    "reference": "6J1857507A",
+                    "description": "Rétroviseur extérieur gauche, électrique"
+                },
+                "retroviseur_exterieur_droit": {
+                    "reference": "6J1857508A",
+                    "description": "Rétroviseur extérieur droit, électrique"
+                },
+                "poignee_de_porte_exterieure_gauche": {
+                    "reference": "6J0839205",
+                    "description": "Poignée de porte extérieure avant gauche"
+                },
+                "poignee_de_porte_exterieure_droite": {
+                    "reference": "6J0839206",
+                    "description": "Poignée de porte extérieure avant droite"
+                },
+                "passage_de_roue_avant_gauche": {
+                    "reference": "6J0809961",
+                    "description": "Passage de roue avant gauche"
+                },
+                "passage_de_roue_avant_droit": {
+                    "reference": "6J0809962",
+                    "description": "Passage de roue avant droit"
+                },
+                "pare_brise": {
+                    "reference": "6J0845011D",
+                    "description": "Pare-brise avec détecteur de pluie"
+                },
+                "lunette_arriere": {
+                    "reference": "6J6845011B",
+                    "description": "Lunette arrière dégivrante"
+                }
+            },
+            "systeme_de_freinage": {
+                "disque_de_frein_avant": {
+                    "reference": "6R0615301A",
+                    "description": "Disque de frein avant 256mm"
+                },
+                "disque_de_frein_arriere": {
+                    "reference": "6R0615601A",
+                    "description": "Disque de frein arrière 230mm"
+                },
+                "tambour_de_frein_arriere": {
+                    "reference": "6R0609617",
+                    "description": "Tambour de frein arrière (selon version)"
+                },
+                "etrier_de_frein_avant_gauche": {
+                    "reference": "6R0615123",
+                    "description": "Étrier de frein avant gauche"
+                },
+                "etrier_de_frein_avant_droit": {
+                    "reference": "6R0615124",
+                    "description": "Étrier de frein avant droit"
+                },
+                "etrier_de_frein_arriere_gauche": {
+                    "reference": "6R0615423",
+                    "description": "Étrier de frein arrière gauche"
+                },
+                "etrier_de_frein_arriere_droit": {
+                    "reference": "6R0615424",
+                    "description": "Étrier de frein arrière droit"
+                },
+                "plaquettes_de_frein_avant": {
+                    "reference": "6R0698151A",
+                    "description": "Plaquettes de frein avant"
+                },
+                "plaquettes_de_frein_arriere": {
+                    "reference": "6R0698451A",
+                    "description": "Plaquettes de frein arrière"
+                },
+                "cylindre_de_frein_arriere": {
+                    "reference": "6R0611023",
+                    "description": "Cylindre de frein arrière (pour tambours)"
+                },
+                "flexible_de_frein_avant": {
+                    "reference": "6R0611701",
+                    "description": "Flexible de frein avant"
+                },
+                "flexible_de_frein_arriere": {
+                    "reference": "6R0611753",
+                    "description": "Flexible de frein arrière"
+                },
+                "maitre_cylindre_de_frein": {
+                    "reference": "6R1614019",
+                    "description": "Maître-cylindre de frein"
+                },
+                "servofrein": {
+                    "reference": "6R1614105",
+                    "description": "Servo frein"
+                },
+                "liquide_de_frein": {
+                    "reference": "B000750M3",
+                    "description": "Liquide de frein DOT4"
+                }
+            },
+            "roues": {
+                "jante_alliage_16_pouces": {
+                    "reference": "6J0601025N",
+                    "description": "Jante alliage 16 pouces SEAT Ibiza Itech"
+                },
+                "jante_acier_15_pouces": {
+                    "reference": "6J0601027",
+                    "description": "Jante acier 15 pouces"
+                },
+                "boulon_de_roue": {
+                    "reference": "N90961102",
+                    "description": "Boulon de roue M14x1.5"
+                },
+                "cache_moyeu_seat": {
+                    "reference": "6J0601171",
+                    "description": "Cache moyeu SEAT"
+                },
+                "roue_de_secours": {
+                    "reference": "6J0601027C",
+                    "description": "Roue de secours galette 15 pouces"
+                },
+                "capteur_de_pression_pneu": {
+                    "reference": "3AA907275B",
+                    "description": "Capteur de pression des pneus (TPMS)"
+                }
+            }
+        }
+    },
+    {
+        "plaque": "eg005rp",
+        "piecesVehicule": {
+            "feux": {
+                "phare_avant_gauche": {
+                    "reference": "7701036502",
+                    "description": "Phare avant gauche"
+                },
+                "phare_avant_droit": {
+                    "reference": "7701036503",
+                    "description": "Phare avant droit"
+                },
+                "feu_arriere_gauche": {
+                    "reference": "7700410756",
+                    "description": "Feu arrière gauche"
+                },
+                "feu_arriere_droit": {
+                    "reference": "7700410757",
+                    "description": "Feu arrière droit"
+                },
+                "troisieme_feu_stop": {
+                    "reference": "7700414674",
+                    "description": "Troisième feu stop"
+                }
+            },
+            "moteur": {
+                "bloc_moteur": {
+                    "reference": "7700872421",
+                    "description": "Bloc moteur D7F 1.2"
+                },
+                "joint_de_culasse": {
+                    "reference": "7701471955",
+                    "description": "Joint de culasse"
+                },
+                "pompe_a_huile": {
+                    "reference": "7700860990",
+                    "description": "Pompe à huile"
+                },
+                "filtre_a_huile": {
+                    "reference": "7700274177",
+                    "description": "Filtre à huile"
+                },
+                "courroie_de_distribution": {
+                    "reference": "7701477028",
+                    "description": "Courroie de distribution"
+                },
+                "pompe_a_eau": {
+                    "reference": "7701469471",
+                    "description": "Pompe à eau"
+                },
+                "alternateur": {
+                    "reference": "7701499869",
+                    "description": "Alternateur 75A"
+                },
+                "demarreur": {
+                    "reference": "7700110989",
+                    "description": "Démarreur 1.1 kW"
+                }
+            },
+            "habitacle": {
+                "tableau_de_bord": {
+                    "reference": "7700840106",
+                    "description": "Tableau de bord gris"
+                },
+                "volant": {
+                    "reference": "7700843326",
+                    "description": "Volant 3 branches"
+                },
+                "siege_conducteur": {
+                    "reference": "7700844965",
+                    "description": "Siège conducteur tissu"
+                },
+                "siege_passager": {
+                    "reference": "7700844966",
+                    "description": "Siège passager tissu"
+                },
+                "banquette_arriere": {
+                    "reference": "7700844972",
+                    "description": "Banquette arrière rabattable"
+                },
+                "poignee_de_porte_interieure": {
+                    "reference": "7700840991",
+                    "description": "Poignée de porte intérieure"
+                }
+            },
+            "carrosserie": {
+                "capot": {
+                    "reference": "7700832874",
+                    "description": "Capot avant"
+                },
+                "pare_chocs_avant": {
+                    "reference": "7700845385",
+                    "description": "Pare-chocs avant gris"
+                },
+                "pare_chocs_arriere": {
+                    "reference": "7700845386",
+                    "description": "Pare-chocs arrière gris"
+                },
+                "portiere_gauche": {
+                    "reference": "7700832871",
+                    "description": "Porte avant gauche"
+                },
+                "portiere_droite": {
+                    "reference": "7700832872",
+                    "description": "Porte avant droite"
+                },
+                "coffre": {
+                    "reference": "7700832873",
+                    "description": "Hayon arrière"
+                },
+                "retroviseur_exterieur_gauche": {
+                    "reference": "7700418830",
+                    "description": "Rétroviseur gauche manuel"
+                },
+                "retroviseur_exterieur_droit": {
+                    "reference": "7700418831",
+                    "description": "Rétroviseur droit manuel"
+                },
+                "pare_brise": {
+                    "reference": "7700836524",
+                    "description": "Pare-brise avec joint"
+                }
+            },
+            "freinage": {
+                "disque_de_frein_avant": {
+                    "reference": "7701208203",
+                    "description": "Disque de frein avant 238mm"
+                },
+                "plaquettes_de_frein_avant": {
+                    "reference": "7701205779",
+                    "description": "Plaquettes de frein avant"
+                },
+                "tambour_de_frein_arriere": {
+                    "reference": "7701208202",
+                    "description": "Tambour de frein arrière"
+                },
+                "mâchoires_de_frein_arriere": {
+                    "reference": "7701208201",
+                    "description": "Mâchoires de frein arrière"
+                },
+                "cylindre_de_frein_arriere": {
+                    "reference": "7701208200",
+                    "description": "Cylindre de frein arrière"
+                },
+                "flexible_de_frein_avant": {
+                    "reference": "7701208204",
+                    "description": "Flexible de frein avant"
+                },
+                "maitre_cylindre_de_frein": {
+                    "reference": "7700837294",
+                    "description": "Maître-cylindre de frein"
+                }
+            },
+            "roues": {
+                "jante_acier_13_pouces": {
+                    "reference": "7700844761",
+                    "description": "Jante acier 13 pouces"
+                },
+                "boulon_de_roue": {
+                    "reference": "7703034265",
+                    "description": "Boulon de roue M12x1.5"
+                },
+                "roue_de_secours": {
+                    "reference": "7701471346",
+                    "description": "Roue de secours galette 13 pouces"
+                },
+                "capteur_de_pression_pneu": {
+                    "reference": "7700109870",
+                    "description": "Capteur de pression des pneus (TPMS)"
+                }
+            }
+        }
+    }]
+}
