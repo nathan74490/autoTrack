@@ -1,11 +1,11 @@
 <template>
     <footer>
-        <img id="btnHome" src="@/components/icons/home.svg" alt="button home"><img class="imgFooter"
+        <RouterLink to="/"><img id="btnHome" src="@/components/icons/home.svg" alt="button home"></RouterLink><img class="imgFooter"
             src="@/components/icons/hearts.svg" alt="button like"><img src="@/components/icons/profil.svg" alt="">
     </footer>
 </template>
 
-<script>
+<script setup>
 </script>
 
 <style>
