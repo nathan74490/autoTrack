@@ -51,9 +51,7 @@ const saveDataControleTech = () => {
   }
   const storedData = JSON.parse(localStorage.getItem(plateNumber.value));
   localStorage.removeItem(plateNumber.value);
-  console.log(storedData.Datefincontroletech);
   storedData.Datefincontroletech=dateFinCont.value
-  console.log( storedData );
   localStorage.setItem(store.plateNumber,JSON.stringify(storedData))
 
 };
@@ -64,9 +62,7 @@ const saveDataAccidentMin = () => {
   }
   const storedData = JSON.parse(localStorage.getItem(plateNumber.value));
   localStorage.removeItem(plateNumber.value);
-  console.log(storedData.Accidents);
   storedData.Accidents=accidentMin.value
-  console.log( storedData );
   localStorage.setItem(store.plateNumber,JSON.stringify(storedData))
 
 };

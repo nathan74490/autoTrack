@@ -1,7 +1,9 @@
 <template>
     <footer>
-        <RouterLink to="/"><img id="btnHome" src="@/components/icons/home.svg" alt="button home"></RouterLink><img class="imgFooter"
-            src="@/components/icons/hearts.svg" alt="button like"><img src="@/components/icons/profil.svg" alt="">
+        <RouterLink to="/"><img id="btnHome" src="@/components/icons/home.svg" alt="button home"></RouterLink>
+        <RouterLink to="/likepadge"><img class="imgFooter"src="@/components/icons/hearts.svg" alt="button like"></RouterLink>
+        <RouterLink to="/PadgeLogin"><img src="@/components/icons/profil.svg" alt="button profil"></RouterLink>
+        
     </footer>
 </template>
 

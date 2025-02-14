@@ -20,19 +20,14 @@ const router = createRouter({
       component: () => import('@/views/Search.vue')
     },
     {
-      path: '/InfoModification',
-      name: 'InfoModification',
-      component: () => import('@/views/InfoModification.vue'),
+      path: '/likepadge',
+      name: 'likepadge',
+      component: () => import('@/likepadge.vue'),
     },
     {
-      path: '/BtnHome',
-      name: 'BtnHome',
-      component: () => import('@/views/BtnHome.vue'),
-    },
-    {
-      path: '/BtnLike',
-      name: 'BtnLike',
-      component: () => import('@/views/BtnModification.vue'),
+      path: '/PadgeLogin',
+      name: 'PadgeLogin',
+      component: () => import('@/PadgeLogin.vue'),
     },
     {
       path: '/ValueResearch',

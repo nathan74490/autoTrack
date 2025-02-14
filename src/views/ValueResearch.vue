@@ -32,7 +32,7 @@ import { store } from "@/store";
 const infoCar = ref([]);
 
 onMounted(async () => {
-  await store.loadCarData(); // Assurer que les données sont chargées avant de les afficher
+  await store.loadCarData()
   store.ifPlateisinlocal();
   store.loadJSONData();
   setInfoCar();

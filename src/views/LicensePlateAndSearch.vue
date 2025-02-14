@@ -1,22 +1,22 @@
 <script setup>
 import { ref } from 'vue'
-import { store } from '@/store' // Import du store
+import { store } from '@/store' 
 import LicensePlate from '@/views/LicensePlate.vue'
 import Search from '@/views/Search.vue'
 
-const title = ref('') // Stocke la valeur de l'input
+const title = ref('') 
 
-// Fonction pour mettre à jour le store
+
 const sendToStore = () => {
-  store.setPlateNumber(title.value) // Envoie la valeur entrée au store
+  store.setPlateNumber(title.value) 
   store.ifPlateisinlocal();
-  console.log('Valeur envoyée au store:', store.plateNumber) // Debug
+  console.log('Valeur envoyée au store:', store.plateNumber)
 }
 </script>
 
 <template>
   <div id="home">
-    <h1>{{ title }}</h1>
+    <h2>Je te conseille d'utiliser les plaques : DK173ZL ou EG005RP</h2>
     <LicensePlate v-model:title="title" />
     <nav id="search">
       <Search @click="sendToStore" />
@@ -25,6 +25,10 @@ const sendToStore = () => {
 </template>
 
 <style>
+h2{
+  font-size:medium;
+  color: white;
+}
 #search {
   display: flex;
   flex-direction: column;

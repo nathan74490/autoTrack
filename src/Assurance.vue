@@ -30,9 +30,7 @@ const saveDatafinAssu = () => {
     }
     const storedData = JSON.parse(localStorage.getItem(plateNumber.value));
     localStorage.removeItem(plateNumber.value);
-    console.log(storedData.DatefinAssu);
     storedData.DatefinAssu = finAssu.value
-    console.log(storedData);
     localStorage.setItem(store.plateNumber, JSON.stringify(storedData))
 };
 const saveDataAssure = () => {
@@ -42,9 +40,7 @@ const saveDataAssure = () => {
     }
     const storedData = JSON.parse(localStorage.getItem(plateNumber.value));
     localStorage.removeItem(plateNumber.value);
-    console.log(storedData.Assure);
     storedData.Assure = assure.value
-    console.log(storedData);
     localStorage.setItem(store.plateNumber, JSON.stringify(storedData))
 };
 </script>

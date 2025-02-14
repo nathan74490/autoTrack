@@ -3,7 +3,7 @@
 </template>
 <script setup>
 import { RouterLink } from 'vue-router'
-defineEmits(['click']) // Déclare un événement "click"
+defineEmits(['click'])
 </script>
 <style>
     #buttonSearch{

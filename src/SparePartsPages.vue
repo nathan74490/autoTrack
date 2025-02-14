@@ -4,19 +4,16 @@ import { ref, onMounted } from 'vue';
 const piecesCar = ref(null);
 const openCategories = ref({});
 
-// Fonction pour récupérer les données du localStorage
 const loadData = () => {
   const storedData = localStorage.getItem('piecesCar');
   if (storedData) {
     piecesCar.value = JSON.parse(storedData);
-    // Initialiser l'état des catégories pour qu'elles soient fermées au premier chargement
     piecesCar.value.piecesVehicule.forEach(category => {
       openCategories.value[category.id] = false;
     });
   }
 };
 
-// Fonction pour basculer l'affichage des catégories
 const toggleCategory = (id) => {
   openCategories.value[id] = !openCategories.value[id];
 };
